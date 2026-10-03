@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Belgian Street Cafe | Luxury Waffles & Burgers</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Playfair Display (Headings) & Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons for Bottom Navigation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cafeDark: '#12100E',
+                        cafeCard: '#181512',
+                        cafeGold: '#D4AF37',
+                        cafeCream: '#F4F1EA',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Glassmorphism & Scroll Styling */
+        body {
+            background-color: #12100E;
+            color: #F4F1EA;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(18, 16, 14, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .hero-glow {
+            background: radial-gradient(circle, rgba(212,175,55,0.15) 0%, rgba(18,16,14,0) 70%);
+        }
+    </style>
+</head>
+<body class="bg-cafeDark text-cafeCream relative selection:bg-cafeGold selection:text-cafeDark">
+
+    <!-- Background 8K Cinematic Glow Effect -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] hero-glow pointer-events-none z-0"></div>
+
+    <!-- HEADER / LOGO -->
+    <header class="relative z-10 w-full py-6 px-8 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="flex items-center space-x-2">
+            <span class="text-cafeGold text-2xl"><i class="fa-solid fa-mug-hot"></i></span>
+            <h1 class="font-serif text-xl md:text-2xl font-bold tracking-wider text-cafeCream">
+                THE BELGIAN <span class="text-cafeGold font-normal italic">Street Cafe</span>
+            </h1>
+        </div>
+        <a href="#menu" class="hidden md:inline-block px-6 py-2.5 rounded-full border border-cafeGold/40 text-cafeGold text-sm tracking-widest uppercase hover:bg-cafeGold hover:text-cafeDark transition-all duration-300">
+            View Menu
+        </a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative z-10 max-w-7xl mx-auto px-6 pt-12 pb-24 md:py-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Left Text Content -->
+        <div class="space-y-6 text-center md:text-left">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-cafeGold/10 border border-cafeGold/30 text-cafeGold text-xs uppercase tracking-[0.2em] font-medium">
+                Artisanal Desserts & Fast Food
+            </span>
+            <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+                Crispy Waffles, Juicy Burgers & <span class="italic text-cafeGold">Sweet Moments.</span>
+            </h2>
+            <p class="text-cafeCream/70 text-base sm:text-lg max-w-lg mx-auto md:mx-0 font-light">
+                Experience the authentic taste of golden Belgian waffles, loaded gourmet burgers, fluffy mini pancakes, and rich thick shakes crafted for true food lovers.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
+                <a href="#menu" class="w-full sm:w-auto px-8 py-4 rounded-full bg-cafeGold text-cafeDark font-semibold tracking-wider uppercase text-sm shadow-lg shadow-cafeGold/20 hover:scale-105 transition-all duration-300 text-center">
+                    Explore Menu
+                </a>
+                <a href="https://wa.me/" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-full border border-cafeCream/20 text-cafeCream font-medium tracking-wider uppercase text-sm hover:border-cafeGold hover:text-cafeGold transition-all duration-300 text-center">
+                    Order via WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <!-- Right 8K-Style Visual / Image Showcase -->
+        <div class="relative flex justify-center">
+            <div class="relative w-full max-w-md aspect-square rounded-3xl overflow-hidden border border-cafeGold/20 shadow-2xl group">
+                <!-- High-end simulated 8K look image (Replace with your actual professional food shot) -->
+                <img src="https://images.unsplash.com/photo-1562376552-0fb1502ebd79?q=80&w=1000&auto=format&fit=crop" alt="Delicious Belgian Waffle" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-cafeDark/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-cafeGold font-semibold">Signature Dish</span>
+                        <h3 class="font-serif text-2xl font-bold text-cafeCream">Nutella Belgian Waffle</h3>
+                    </div>
+                    <span class="px-3 py-1 bg-cafeGold text-cafeDark font-bold rounded-lg text-sm">₹280</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING BOTTOM NAVIGATION BAR (APP-LIKE UI) -->
+    <nav aria-label="Bottom Navigation" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-md">
+        <div class="glass-nav rounded-full px-6 py-3 flex justify-between items-center shadow-2xl shadow-black/80">
+            <a href="#" class="flex flex-col items-center text-cafeGold transition-transform hover:scale-110">
+                <i class="fa-solid fa-house text-lg"></i>
+                <span class="text-[10px] tracking-wider uppercase mt-0.5">Home</span>
+            </a>
+            <a href="#menu" class="flex flex-col items-center text-cafeCream/70 hover:text-cafeGold transition-transform hover:scale-110">
+                <i class="fa-solid fa-waffle text-lg"></i>
+                <span class="text-[10px] tracking-wider uppercase mt-0.5">Waffles</span>
+            </a>
+            <a href="#menu" class="flex flex-col items-center text-cafeCream/70 hover:text-cafeGold transition-transform hover:scale-110">
+                <i class="fa-solid fa-burger text-lg"></i>
+                <span class="text-[10px] tracking-wider uppercase mt-0.5">Burgers</span>
+            </a>
+            <a href="#menu" class="flex flex-col items-center text-cafeCream/70 hover:text-cafeGold transition-transform hover:scale-110">
+                <i class="fa-solid fa-cup-straw text-lg"></i>
+                <span class="text-[10px] tracking-wider uppercase mt-0.5">Shakes</span>
+            </a>
+            <a href="https://wa.me/" target="_blank" class="flex flex-col items-center text-cafeCream/70 hover:text-cafeGold transition-transform hover:scale-110">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span class="text-[10px] tracking-wider uppercase mt-0.5">Order</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Spacer for bottom nav clearance -->
+    <div class="h-28"></div>
+
+</body>
+  </html>
+  
